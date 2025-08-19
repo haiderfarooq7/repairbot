@@ -58,7 +58,7 @@ def main():
             vectorstore=get_vectorstore()
             if vectorstore is None:
                 st.error("Failed to load the vector store")
-
+#Add your GROQ_API_KEY in .env file (get free key from https://groq.com)
             qa_chain = RetrievalQA.from_chain_type(
                 llm=ChatGroq(
                     model_name="meta-llama/llama-4-maverick-17b-128e-instruct",  # free, fast Groq-hosted model
