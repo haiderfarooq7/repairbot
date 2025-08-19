@@ -1,0 +1,4 @@
+.venv
+.env
+vectorstore/db_faiss
+data
